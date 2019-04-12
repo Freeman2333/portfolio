@@ -1,0 +1,126 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+
+
+/* Medium Devices, Desktops */
+// @mixin mediaLg
+@media only screen and (max-width : 1170px)
+	.about-info
+		grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'
+		grid-template-columns: 1fr
+
+
+
+/* Small Devices, Tablets */
+// @mixin mediaMd
+@media only screen and (max-width : 768px)
+	
+	main
+		align-items: center
+		text-align: center
+		overflow: auto
+
+	main
+		h1.lg-heading
+			line-height: 1
+			margin-bottom: 1rem
+
+	nav.menu
+		flex-direction: column
+
+	ul.menu-nav,
+	div.menu-branding
+		width: 100%
+		flex: 0 0 100%
+		min-height: 0
+
+		&.show 
+			transform: translate3d(0,0,0)
+
+	.menu-nav
+		height: calc(100% - 170px)
+		transform: translate3d(-100%,0,0)
+		font-size: 20px
+		overflow: auto
+
+	.menu
+		overflow: auto
+		height: 100%
+
+		.nav-link
+			padding: .5rem
+			line-height: 1.2
+
+	.menu-branding
+		max-height: 170px
+		transform: translate3d(100%,0,0)
+		padding-top: 20px
+		padding-bottom: 20px
+
+		.portrait
+			width: 140px
+			height: 140px
+
+	.projects
+		.item
+			width: 48%
+			&:nth-child(2n+2)
+				margin-right: 0
+
+
+
+@media only screen and (max-width : 650px)
+
+	.boxes
+		div 
+			padding: 1rem 2rem	
+			font-size: 1.5rem
+
+@media only screen and (max-width : 600px)
+	.projects
+		grid-template-columns: repeat(1, 1fr)
+		.item
+			width: 98%
+			margin-right: 0	
+
+	// .works-img__wrapper
+	// 	height: auto
+
+	.projects img
+		height: auto
+
+/* Extra Small Devices, Phones */
+// @mixin mediaSm
+@media only screen and (max-width : 500px)
+	main h1.lg-heading
+		margin-top: 1rem
+		font-size: 5rem
+
+	main 
+		padding: 2rem
+
+	.boxes
+	 	span
+	 		display: block 
+
+@media only screen and (max-width : 400px)
+
+	.boxes
+		div 
+			padding: 1rem 1.5rem	
+			font-size: 1.3rem
+
+
+@media only screen and (min-width : 1171px)
+	.projects
+		img
+			height: 100%
+		.item
+			margin-right: 10px
+			width: 24%
+			&:nth-child(4n+4)
+				margin-right: 0	
+			&:nth-child(3n+3)
+				margin-right: 10px
