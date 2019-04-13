@@ -8,8 +8,8 @@
 // @mixin mediaLg
 @media only screen and (max-width : 1170px)
 	.about-info
-		grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'
-		grid-template-columns: 1fr
+		grid-template-areas: 'bioimage bioimage' 'bio bio' 'skill1 skill2' 'skill3 skill4' 'skill5 skill6' 
+		grid-template-columns: 1fr 1fr
 
 
 
@@ -40,7 +40,7 @@
 			transform: translate3d(0,0,0)
 
 	.menu-nav
-		height: calc(100% - 170px)
+		max-height: calc(100% - 170px)
 		transform: translate3d(-100%,0,0)
 		font-size: 20px
 		overflow: auto
@@ -68,6 +68,10 @@
 			width: 48%
 			&:nth-child(2n+2)
 				margin-right: 0
+
+	.about-info
+		grid-template-areas: 'bioimage' 'bio' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 
+		grid-template-columns: 1fr
 
 
 
@@ -104,6 +108,15 @@
 	.boxes
 	 	span
 	 		display: block 
+
+@media only screen and (max-height : 390px)
+	
+	.menu .nav-link
+		padding: 0.15rem
+
+	.menu-branding
+		padding-top: 10px
+		padding-bottom: 10px
 
 @media only screen and (max-width : 400px)
 
