@@ -1,123 +1,99 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
 
-	<meta charset="utf-8">
-
-	<title>About Me | Sergii Popov</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="shortcut icon" href="img/favicon/me.png" type="image/x-icon">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.min.css">
-
+  <link rel="stylesheet" href="css/main.css">
+  <title>About Me</title>
 </head>
 
 <body>
-	<header>
-		<div class="menu-btn">
-			<div class="btn-line"></div>
-			<div class="btn-line"></div>
-			<div class="btn-line"></div>
-		</div>
-		<nav class="menu">
-			<div class="menu-branding">
-				<div class="portrait"></div>
-			</div>
-			<ul class="menu-nav">
-				<li class="nav-item ">
-					<a href="/" class="nav-link">
-						Главная
-					</a>
-				</li>
-				<li class="nav-item current">
-					<a href="about.html" class="nav-link">
-						Обо мне
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="works.html" class="nav-link">
-						Мои работы 
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="contact.html" class="nav-link">
-						Конакты
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main id="about">
-		<h1 class="lg-heading">About
-			<span class="text-secondary">Me</span> 
-		</h1>
-		<h2 class="sm-heading">
-			Несколько слов обо мне...
-		</h2>
-		<div class="about-info">
-			<img src="img/portrait.jpg" alt="Serg Freeman" class="bio-image">
-			<div class="bio">
-				<h3 class="text-secondary bio-title">
-					BIO
-				</h3>
-				<p>Я начинающий фронтенд разработчик. Отсутствие большего опыта учатия в реальных проектах я попытался восполнить множеством сверстанных тестовых проектов, которые вы можете посмотреть <a class="works-link" href="works.html">здесь</a>.</p>
-				<p>По образованию я инженер-строитель. В 2011-м году закончил Киевский Национальный Универитет Строительства и Архитектуры по специальности Городское Строительство с димполомом с отличием. В 2012-м закончил магистратуру в том же университете по специльности Управление Проектами также с дипломом с отличием.</p>
-				<p>Веб-разработку я изучю самостоятельно, поскольку имею определенный опыт самообразования (изучение иностранных языков- английского, греческого и древнегреческого, также теологии).</p>
-				<p>Работаю с такими языками разметки и программирования, как HTML5, CSS3, JavaScript. Использую сборщик проектов Gulp.</p>
-				<p>Моя задача на данный момент - найти отдаленную или полуотдаленную работу в Киеве на позиции фронтенд разработчика.</p>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
 
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">
+            My Work
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            How To Reach Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-			</div>
-			<div class="skill skill-1">
-				<h3>HTML5</h3>
-				<h6 class="position">Препроцессоры</h6>
-				<p>При работе с HTML имею опыт использования препроцессора <span class="highlight">PUG</span>. В моем портфолио половина проектов сверстано с использованием данного препроцессора. Пример последнего проекта - <a class="works-link" href="https://freeman2333.github.io/kitchen-time/">интернет магазин КитченТайм</a>.</p>
-			</div>
-			<div class="skill skill-2">
-				<h3>CCS3</h3>
-				<h6 class="position">Препроцессоры и Фреймоворки</h6>
-				<p>При работе с CCS имею опыт использования препроцессоров <span class="highlight">Sass</span> и <span class="highlight">Stylus</span>. Также имею опыт работы с фреймворком <span class="highlight">Bootstrap</span> 3 и 4. Пример одного из проектов, сделанных с использованием Бутстрапа - <a class="works-link" href="https://freeman2333.github.io/fortis/">сайт строительной компании "Фортис"</a>.</p></p>
-			</div>
-			<div class="skill skill-3">
-				<h3>JavaScript</h3>
-				<h6 class="position">Версии, библиотеки и фреймворки</h6>
-				<p>Имею опыт создания приложений с <span class="highlight">ES6</span>.</p> Также пользуюсь библиотекой <span class="highlight">JQuery</span>. Уже приступил и планирую дальше изучать <span class="highlight">React.js</span> </p>
-				<p>Знаком с <span class="highlight">AJAX</span>, <span class="highlight">JSON.</span></p>
-				<p><a class="works-link" href="https://github.com/Freeman2333/projects/tree/master/javascript">Здесь</a> можно посмотреть те тестовые приложения, которые я создал с использованием JS.</p>
-			</div>
-			<div class="skill skill-4">
-				<h3>Wordpress</h3>
-				<h6 class="position">Backend</h6>
-				<p>В данный момент я приступил к изучению CMS <span class="highlight">Wordpress</span>. Надеюсь уже в ближайшем будущем уверенно овладеть ею.</p>
-				<p>Имею базовые понятия о <span class="highlight">PHP</span>.  Функции, циклы, классы и т.д.</p>
-			</div>
-			<div class="skill skill-5">
-				<h3>Дополнительно</h3>
-				<h6 class="position">Дополнительная Информация</h6>
-				<p>Свободно владею <span class="highlight">английским языком</span>, так как был членом таких студенческих международных организаций, как AEGEE и Alternative-V. Имею разговорный уровень <span class="highlight">греческого языка</span>.</p>
-				<p>Из личных качеств могу выделить постоянное стремление к <span class="highlight">самосовершенствованию</span> и <span class="highlight">самообучениую</span>, <span class="highlight">ответственность</span>. Имею <span class="highlight">аналитический</span> склад ума.</p>
-			</div>
+  <main id="about">
+    <h1 class="lg-heading">
+      About
+      <span class="text-secondary">Me</span>
+    </h1>
+    <h2 class="sm-heading">
+      Let me tell you a few things...
+    </h2>
+    <div class="about-info">
+      <img src="img/portrait.jpg" alt="John Doe" class="bio-image">
 
-		</div>
-	</main>
-	<footer id="main-footer">
-		Copyright &copy; 2019
-	</footer>
+      <div class="bio">
+        <h3 class="text-secondary">BIO</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt magni nam nisi quae vitae? Quod molestiae ipsa
+          autem natus eum vel ducimus nulla harum voluptatem eligendi! Unde, reiciendis? Praesentium, laborum.</p>
+      </div>
 
-	
+      <div class="job job-1">
+        <h3>123 Webshop</h3>
+        <h6>Full Stack Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores
+          expedita dolor necessitatibus deserunt nemo.</p>
+      </div>
 
-	<script src="js/scripts.min.js"></script>
+      <div class="job job-2">
+        <h3>Designers ABC</h3>
+        <h6>Front End Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores
+          expedita dolor necessitatibus deserunt nemo.</p>
+      </div>
 
+      <div class="job job-3">
+        <h3>Webworks</h3>
+        <h6>Graphic Designer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores
+          expedita dolor necessitatibus deserunt nemo.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2018
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
