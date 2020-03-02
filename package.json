@@ -3,10 +3,7 @@
   "version": "",
   "description": "",
   "main": "index.js",
-  "homepage": "https://freeman2333.github.io/portfolio",
-  "scripts": {
-    "deploy": "gh-pages -d dist"
-  },
+  
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -25,7 +22,7 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.1",
-    "gh-pages": "^2.0.1"
+
   },
   "dependencies": {
     "gh-pages": "^2.0.1"
